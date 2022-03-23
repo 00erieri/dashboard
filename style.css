@@ -1,0 +1,612 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: hsl(226, 43%, 10%);
+}
+.storarutan {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: 260px 260px;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  justify-content: center;
+  align-content: center;
+}
+
+.div1 {
+  grid-row: 1/3;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+}
+.div2 {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: -100;
+  background-color: hsl(235, 46%, 20%);
+}
+.div3 {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: -100;
+  background-color: hsl(235, 46%, 20%);
+}
+.div4 {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: -100;
+  background-color: hsl(235, 46%, 20%);
+}
+.div5 {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: -100;
+  background-color: hsl(235, 46%, 20%);
+}
+.div6 {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: -100;
+  background-color: hsl(235, 46%, 20%);
+}
+.div7 {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: -100;
+  background-color: hsl(235, 46%, 20%);
+}
+
+.uppe1 {
+  height: 70%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 20px;
+}
+.uppe1 img {
+  position: relative;
+  top: 40px;
+  left: 30px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.text {
+  position: relative;
+  color: white;
+  top: 80px;
+  left: 30px;
+}
+.text h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.text h4 {
+  position: relative;
+  font-weight: 300;
+  top: -6px;
+}
+.nere1 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.btn1 {
+  margin-left: 30px;
+  width: fit-content;
+  cursor: pointer;
+}
+.btn2 {
+  margin-left: 30px;
+  width: fit-content;
+  cursor: pointer;
+}
+.btn3 {
+  margin-left: 30px;
+  width: fit-content;
+  cursor: pointer;
+}
+.btn1:hover {
+  color: white;
+}
+.btn2:hover {
+  color: white;
+}
+.btn3:hover {
+  color: white;
+}
+.användare {
+  color: white;
+}
+
+.uppe2 {
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  background-color: hsl(15, 100%, 70%);
+  border: none;
+  z-index: -1;
+}
+.uppe2 img {
+  position: absolute;
+  right: 5%;
+}
+
+.uppe3 {
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  background-color: hsl(195, 74%, 62%);
+  border: none;
+  z-index: -1;
+}
+.uppe3 img {
+  position: absolute;
+  right: 5%;
+}
+
+.uppe4 {
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  background-color: hsl(348, 100%, 68%);
+  border: none;
+  z-index: -1;
+}
+.uppe4 img {
+  position: absolute;
+  right: 5%;
+}
+
+.uppe5 {
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  background-color: hsl(145, 58%, 55%);
+  border: none;
+  z-index: -1;
+}
+.uppe5 img {
+  position: absolute;
+  right: 5%;
+}
+
+.uppe6 {
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  background-color: hsl(264, 64%, 52%);
+  border: none;
+  z-index: -1;
+}
+.uppe6 img {
+  position: absolute;
+  right: 5%;
+}
+
+.uppe7 {
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  background-color: hsl(43, 84%, 65%);
+  border: none;
+  z-index: -1;
+}
+.uppe7 img {
+  position: absolute;
+  right: 5%;
+}
+
+.work {
+  display: flex;
+  position: relative;
+  top: 30px;
+  left: 35px;
+}
+.work img {
+  position: absolute;
+  right: 25%;
+  height: 8px;
+  width: 30px;
+}
+.work h4 {
+  color: white;
+  letter-spacing: 1px;
+}
+.nere2 {
+  position: relative;
+  top: 60px;
+  left: 35px;
+}
+.nere2 h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: normal;
+}
+.nere2 h5 {
+  position: relative;
+  top: 10px;
+  color: white;
+}
+.play {
+  display: flex;
+  position: relative;
+  top: 30px;
+  left: 35px;
+}
+.play img {
+  position: absolute;
+  right: 25%;
+  height: 8px;
+  width: 30px;
+}
+.play h4 {
+  color: white;
+  letter-spacing: 1px;
+}
+.nere3 {
+  position: relative;
+  top: 60px;
+  left: 35px;
+}
+.nere3 h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: normal;
+}
+.nere3 h5 {
+  position: relative;
+  top: 10px;
+  color: white;
+}
+.study {
+  display: flex;
+  position: relative;
+  top: 30px;
+  left: 35px;
+}
+.study img {
+  position: absolute;
+  right: 25%;
+  height: 8px;
+  width: 30px;
+}
+.study h4 {
+  color: white;
+  letter-spacing: 1px;
+}
+.nere4 {
+  position: relative;
+  top: 60px;
+  left: 35px;
+}
+.nere4 h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: normal;
+}
+.nere4 h5 {
+  position: relative;
+  top: 10px;
+  color: white;
+}
+.exercise {
+  display: flex;
+  position: relative;
+  top: 30px;
+  left: 35px;
+}
+.exercise img {
+  position: absolute;
+  right: 25%;
+  height: 8px;
+  width: 30px;
+}
+.exercise h4 {
+  color: white;
+  letter-spacing: 1px;
+}
+.nere5 {
+  position: relative;
+  top: 60px;
+  left: 35px;
+}
+.nere5 h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: normal;
+}
+.nere5 h5 {
+  position: relative;
+  top: 10px;
+  color: white;
+}
+.social {
+  display: flex;
+  position: relative;
+  top: 30px;
+  left: 35px;
+}
+.social img {
+  position: absolute;
+  right: 25%;
+  height: 8px;
+  width: 30px;
+}
+.social h4 {
+  color: white;
+  letter-spacing: 1px;
+}
+.nere6 {
+  position: relative;
+  top: 60px;
+  left: 35px;
+}
+.nere6 h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: normal;
+}
+.nere6 h5 {
+  position: relative;
+  top: 10px;
+  color: white;
+}
+.selfcare {
+  display: flex;
+  position: relative;
+  top: 30px;
+  left: 35px;
+}
+.selfcare img {
+  position: absolute;
+  right: 25%;
+  height: 8px;
+  width: 30px;
+}
+.selfcare h4 {
+  color: white;
+  letter-spacing: 1px;
+}
+.nere7 {
+  position: relative;
+  top: 60px;
+  left: 35px;
+}
+.nere7 h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: normal;
+}
+.nere7 h5 {
+  position: relative;
+  top: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .storarutan {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobil1,
+  .mobil2,
+  .mobil4,
+  .mobil5,
+  .mobil6,
+  .mobil7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .selfcare {
+    width: 85%;
+    left: 0;
+  }
+  .div2 {
+    width: 90%;
+    height: 170px;
+  }
+  .uppe2 img {
+    position: absolute;
+
+    right: 3%;
+
+    top: -10px;
+  }
+  .nere2,
+  .nere3,
+  .nere4,
+  .nere5,
+  .nere6,
+  .nere7 {
+    top: 40px;
+    width: 85%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nere2 h1 {
+    font-size: 50px;
+    color: white;
+    font-size: 42px;
+    font-weight: normal;
+  }
+  .work img,
+  .play img,
+  .study img,
+  .exercise img,
+  .social img,
+  .selfcare img {
+    right: 0;
+  }
+  .nere2 h5,
+  .nere3 h5,
+  .nere4 h5,
+  .nere5 h5,
+  .nere6 h5,
+  .nere7 h5 {
+    top: 20px;
+  }
+  .div3 {
+    width: 90%;
+    height: 170px;
+  }
+  .uppe3 img {
+    position: absolute;
+
+    right: 3%;
+
+    top: -10px;
+  }
+
+  .nere3 h1 {
+    font-size: 50px;
+    color: white;
+    font-size: 42px;
+    font-weight: normal;
+  }
+
+  .div4 {
+    width: 90%;
+    height: 170px;
+  }
+  .uppe4 img {
+    position: absolute;
+
+    right: 3%;
+
+    top: -10px;
+  }
+
+  .nere4 h1 {
+    font-size: 50px;
+    color: white;
+    font-size: 42px;
+    font-weight: normal;
+  }
+
+  .div5 {
+    width: 90%;
+    height: 170px;
+  }
+  .uppe5 img {
+    position: absolute;
+
+    right: 3%;
+
+    top: -10px;
+  }
+
+  .nere5 h1 {
+    font-size: 50px;
+    color: white;
+    font-size: 42px;
+    font-weight: normal;
+  }
+
+  .div6 {
+    width: 90%;
+    height: 170px;
+  }
+  .uppe6 img {
+    position: absolute;
+
+    right: 3%;
+
+    top: -10px;
+  }
+
+  .nere6 h1 {
+    font-size: 50px;
+    color: white;
+    font-size: 42px;
+    font-weight: normal;
+  }
+
+  .div7 {
+    width: 90%;
+    height: 170px;
+  }
+  .uppe7 img {
+    position: absolute;
+
+    right: 3%;
+
+    top: -10px;
+  }
+
+  .nere7 h1 {
+    font-size: 50px;
+    color: white;
+    font-size: 42px;
+    font-weight: normal;
+  }
+
+  .div1 {
+    width: 90%;
+    height: 170px;
+  }
+  .uppe1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .uppe1 img {
+    top: 15px;
+    left: 0;
+  }
+  .text {
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    top: 40px;
+  }
+  .text h4 {
+    top: -3px;
+  }
+  .namn {
+    display: flex;
+  }
+  .text h1 {
+    font-size: 160%;
+  }
+  #efternamn {
+    margin-left: 5px;
+  }
+  .nere1 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .btn1,
+  .btn2,
+  .btn3 {
+    margin-left: 0;
+  }
+}
+.footer-license {
+  color: white;
+}
